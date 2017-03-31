@@ -21,6 +21,23 @@ h1
  	color: $canada-white;
 }
 
+h2
+{
+	font-family: 'cast_ironcondensed';
+ 	letter-spacing: 8px;
+	font-size: 40px;
+ 	color: $canada-white;
+}
+
+@media (max-width: 500px)
+{
+	h1
+	{
+		line-height: 60px;
+		font-size: 50px;
+	}
+}
+
 p 
 {
   font-family: 'Slabo 27px', serif;
@@ -35,12 +52,6 @@ a
 
 
 /*NAVIGATION*/
-#logo
-{
-	max-width: 90%;
-	margin-top: 10px;
-}
-
 
 .fullWidth 
 {
@@ -53,15 +64,23 @@ a
 
 .top-bar
 {
-	background-color: none;
+	background-color: $canada-grey;
 }
+
 
 .top-bar .menu-icon
 {
 	display: block;
 	float: right;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-right: 5px;
+}
+
+
+header
+{
+	background-color: $canada-grey;
+	height: 75px;
 }
 
 
@@ -69,7 +88,8 @@ a
 {
 	display: block;
 	float: left;
-	max-width: 60px;
+	max-width: 50px;
+	margin-top: 15px;
 }
 
 #mainNav
@@ -122,18 +142,31 @@ a
 
 
 /*HOME PAGE*/
+
+/*Mobile First*/
+
+#homeLandingPage
+{
+	height: 90%;
+	background-image: url(../images/action11.jpg);
+	background-size: 100%;
+	background-size: 300%;
+	background-color: rgba(51,51,51,0.90);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+}
+
 #homeTitle
 {
 	text-align: center;
-	margin-top: 150px;
-	font-size: 96px;
+	margin-top: 20%;
 }
 
 #homeParagraph
 {
 	text-align: center;
-	margin-bottom: 190px;
-	font-size: 24px;
+	font-size: 18px;
+	line-height: 22px;
 }
 
 .fullscreen-bg {
@@ -168,7 +201,7 @@ a
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .fullscreen-bg {
     background: url('../img/videoframe.jpg') center center / cover no-repeat;
   }
@@ -178,18 +211,29 @@ a
   }
 }
 
+@media (min-width: 321px)
+{
+	#homeTitle
+	{
+		margin-top: 40%;
+	}
+}
+
+
 #homeLegacyCont
 {
 	background-image: url(../images/action2.jpg);
+	background-size: 190%;
 	background-color: rgba(255,255,255,0.5);
-	background-position:50% 50%;
+	background-position: 50% 50%;
 	background-blend-mode: overlay;
+	height: 400px;
 }
 
 #homeLegacy
 {
 	text-align: center;
-	margin-top: 290px;
+	margin-top: 100px;
 	color: $canada-grey;
 }
 
@@ -200,6 +244,9 @@ a
 	height: 50px;
 	font-family: 'Slabo 27px';
 	font-size: 24px;
+	width: 200px;
+	margin: 0 auto;
+	display: block;
 	margin-bottom: 290px;
 	-webkit-transition: opacity 0.3s ease-in-out;
   	-moz-transition: opacity 0.3s ease-in-out;
@@ -217,29 +264,25 @@ a
 {
 	background-image: url(../images/fans.jpg);
 	background-position:50% 30%;
+	background-size: 250%;
+	height: 400px;
 }
 
 #homeBlog
 {
 	text-align: left;
-	margin-top: 200px;
-	margin-bottom: 50px;
 	color: $canada-white;
-	display: block;
-	float: right;
-	line-height: 100px;
+	margin-left: 20px;
+	margin-top: 120px;
 }
 
 #homeBlogContent
 {
 	background-color: rgba(51,51,51,.75);
+	width: 100%;
+	height: 400px;
 }
 
-#homeBlogWidth
-{
-	width: 70%;
-	margin-left: 100px;
-}
 
 #blogButton
 {
@@ -248,15 +291,16 @@ a
 	height: 50px;
 	font-family: 'Slabo 27px';
 	font-size: 24px;
-	margin-bottom: 200px;
+	width: 40%;
 	width: 150px;
+	display: block;
+	margin-bottom: 20%;
+	margin-left: 20px;
 	-webkit-transition: opacity 0.3s ease-in-out;
   	-moz-transition: opacity 0.3s ease-in-out;
   	-ms-transition: opacity 0.3s ease-in-out;
   	-o-transition: opacity 0.3s ease-in-out;
   	transition: opacity 0.3s ease-in-out;
-  	display: block;
-	float: left;
 }
 
 #blogButton:hover
@@ -267,35 +311,29 @@ a
 #homePartnerCont
 {
 	background-image: url(../images/ice_leaf.png);
-	background-position:100% 100%;
-	background-size: 100%;
+	background-position: 60% 100%;
+	background-size: 180%;
+	height: 300px;
 }
+
 
 #homePartner
 {
-	text-align: left;
-	margin-top: 200px;
+	margin-top: 50px;
 	margin-bottom: 10px;
 	color: $canada-grey;
-	display: block;
 	float: left;
-	line-height: 100px;
+	margin-left: 20px;
+	width: 200px;
+
 }
 
-#homePartnerContent
+@media (max-width: 500px)
 {
-}
-
 #homePartnerPar
 {
-	color: $canada-grey;
-	font-size: 24px;
+	display: none;
 }
-
-#homePartnerWidth
-{
-	width: 70%;
-	margin-left: 100px;
 }
 
 #partnerButton
@@ -314,6 +352,7 @@ a
   	transition: opacity 0.3s ease-in-out;
   	display: block;
 	float: left;
+	margin-left: 20px;
 }
 
 #partnerButton:hover
@@ -321,58 +360,363 @@ a
 	opacity: 0.7;
 }
 
-#homeEducationCont
-{
-	background-image: url(../images/action1.jpg);
-	background-position:50% 30%;
-	background-size: 100%;
-}
+#homeEducationCont {
+  background-image: url(../images/action1.jpg);
+  background-position: 50% 30%;
+  background-size: 200%;
+  height: 400px;
+ }
 
-#homeEducation
+#homeEducation 
 {
-	text-align: right;
-	margin-top: 200px;
-	margin-bottom: 50px;
 	color: $canada-white;
-	display: block;
-	float: right;
-	line-height: 100px;
-}
-
-#homeEducationContent
-{
-	background-color: rgba(51,51,51,.75);
-}
-
-#homeEducationWidth
-{
-	width: 90%;
-}
-
-#homeEducationPar
-{
+	margin-top: 70px;
+	margin-right: 10px;
 	text-align: right;
+ }
+
+#homeEducationContent 
+{
+  background-color: rgba(51, 51, 51, 0.75);
+  width: 100%; 
+  height: 400px;
+  position: absolute;
 }
 
-#educationButton
+#homeEducationPar 
 {
-	background-color: $canada-red;
-	border-radius: 12px;
-	height: 50px;
-	font-family: 'Slabo 27px';
-	font-size: 24px;
-	margin-bottom: 200px;
-	width: 150px;
-	-webkit-transition: opacity 0.3s ease-in-out;
-  	-moz-transition: opacity 0.3s ease-in-out;
-  	-ms-transition: opacity 0.3s ease-in-out;
-  	-o-transition: opacity 0.3s ease-in-out;
-  	transition: opacity 0.3s ease-in-out;
-  	display: block;
-	float: right;
+	display: inline-block;
+	text-align: right;
+	font-size: 18px;
+	margin-right: 15px;
+	margin-left: 20px;
+  }
+
+#educationButton {
+  background-color: #eb1c3c;
+  border-radius: 12px;
+  height: 50px;
+  font-family: 'Slabo 27px';
+  font-size: 24px;
+  width: 150px;
+  margin-right: 15px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
+  float: right;
+ }
+
+#educationButton:hover {
+  opacity: 0.7; }
+
+
+
+#facebook
+{
+	background-image: url(../images/facebook.svg);
+	max-height: 100px;
+	z-index: 500;
 }
 
-#educationButton:hover
+
+#homeSocial
 {
-	opacity: 0.7;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#footerCont
+{
+	background-color: $canada-grey;	
+	padding-bottom: 30px;
+}
+
+.copyRight
+{
+	text-align: center;
+	font-size: 12px;
+}
+
+#footerLogo
+{
+	max-width: 40px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+#homeConnect
+{
+	height: 200px;
+	background-image: url(../images/connect.jpg);
+	background-position: 50% 30%;
+ 	background-size: 120%;
+}
+
+#connectButton {
+  background-color: #eb1c3c;
+  border-radius: 16px;
+  height: 60px;
+  font-family: 'Slabo 27px';
+  font-size: 30px;
+  width: 200px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+ }
+
+#connectButton:hover {
+  opacity: 0.7; }
+
+
+/*Medium Home*/
+@media (min-width: 500px)
+{
+	h1
+	{
+		font-size: 70px;
+		line-height: 80px;
+	}
+
+	#logo
+	{
+		max-width: 60px;
+	}
+
+	#homeLandingPage
+	{
+		height: 95%;
+	}
+
+	#homeParagraph
+	{
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	#homeLegacyCont
+	{
+		height: 600px;
+		background-size: 210%;
+	}
+
+	#homeLegacy
+	{
+		margin-top: 200px;
+	}
+
+	#homeBlog {
+	  text-align: left;
+	  margin-bottom: 20px;
+	  color: #fff;
+	  display: block;
+	  float: right;
+	  margin-top: 40px;
+	 }
+
+	#homeBlogContent 
+	{
+	  background-color: rgba(51, 51, 51, 0.75); 
+	  width: 70%;
+	  float: right;
+	}
+
+	#blogButton {
+	  display: block;
+	  float: left; 
+	}
+
+	#homePartnerCont
+	{
+		background-image: url(../images/ice_leaf.png);
+		height: 400px;
+		background-position: 100% 100%;
+		background-size: 150%;
+	}
+
+
+	#homePartner
+	{
+		margin-top: 50px;
+		margin-bottom: 10px;
+		color: $canada-grey;
+		float: left;
+		margin-left: 20px;
+		width: 500px;
+
+	}
+
+	#homePartnerPar
+	{
+		color: $canada-grey;
+		margin-left: 20px;
+		font-size: 18px;
+		width: 300px;
+	}
+
+	#homeEducationCont 
+	{
+	  background-position: 30% 30%;
+	  background-size: 200%;
+	  height: 400px;
+	 }
+
+	#homeEducation 
+	{
+		float: right;
+		margin-top: 70px;
+	 }
+
+	#homeEducationContent 
+	{
+	  width: 70%; 
+	  height: 400px;
+	  float: left;
+	}
+
+	#homeEducationPar 
+	{
+		display: inline-block;
+		text-align: right;
+		font-size: 18px;
+		margin-right: 20px;
+		margin-left: 20px;
+	  }
+
+	#educationButton {
+	  margin-right: 20px;
+	  display: block;
+	  float: right;
+	 }
+
+	.copyRight
+	{
+		font-size: 18px;
+	}
+
+	#footerLogo
+	{
+		max-width: 60px;
+	}
+
+}
+
+/*Desktop Size*/
+@media (min-width: 768px)
+{
+	h1
+	{
+		font-size: 100px;
+		line-height: 110px;
+	}
+
+	#homeLandingPage
+	{
+		background-image: none;
+		background-color: transparent;
+	}
+
+	#homeTitle
+	{
+		margin-top: 250px;
+	}
+
+	#homeBlogCont
+	{
+		height: 600px;
+	}
+
+	#homeBlogCont
+	{
+		background-size: 150%;
+	}
+
+	#homeBlog
+	{
+		text-align: left;
+		color: $canada-white;
+		margin-left: 40px;
+		margin-top: 150px;
+		margin-right: 40px;
+	}
+
+	#homeBlogContent
+	{
+		height: 600px;
+		width: 60%;
+	}
+
+	#blogButton
+	{
+		margin-left: 40px;
+	}
+
+	#blogButton:hover
+	{
+		opacity: 0.7;
+	}
+
+	#homePartnerCont
+	{
+		background-image: url(../images/ice_leaf.png);
+		height: 600px;
+		background-position: 80% 100%;
+		background-size: 150%;
+	}
+
+
+	#homePartner
+	{
+		margin-top: 100px;
+		margin-bottom: 10px;
+		color: $canada-grey;
+		float: left;
+		margin-left: 40px;
+		width: 800px;
+
+	}
+
+	#homePartnerPar
+	{
+		color: $canada-grey;
+		margin-left: 40px;
+		font-size: 24px;
+	}
+
+	#partnerButton
+	{
+		margin-left: 40px;
+	}
+
+	#homeEducationCont
+	{
+		height: 600px;
+	}
+
+	#homeEducationContent
+	{
+		width: 60%;
+		height: 600px;
+	}
+
+	#homeEducation
+	{
+		margin-top: 150px;
+	}
+
+	#homeEducationPar
+	{
+		font-size: 24px;
+		margin-left: 40px;
+	}
+
 }
