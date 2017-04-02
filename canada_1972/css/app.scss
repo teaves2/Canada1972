@@ -184,7 +184,7 @@ a:hover
 {
 	text-align: center;
 	font-size: 18px;
-	line-height: 22px;
+	line-height: 24px;
 }
 
 .fullscreen-bg {
@@ -527,8 +527,8 @@ a:hover
 
 	.landingParagraph
 	{
-		font-size: 26px;
-		line-height: 30px;
+		font-size: 28px;
+		line-height: 34px;
 	}
 
 	#homeLegacyCont
@@ -1002,107 +1002,6 @@ input
 	border: 0.1px solid #e6e6e6;
 }
 
-
-/*#airCanada
-{
-	background-image: url(../images/air_canada.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 80%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#hockeyCanada
-{
-	background-image: url(../images/hockeycan.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 70%;
-	background-position: 50% 40%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-
-}
-
-#timHortons
-{
-	background-image: url(../images/tim_hortons.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 90%;
-	background-position: 50% 40%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#brockU
-{
-	background-image: url(../images/brock.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 100%;
-	background-position: 50% 40%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#cshof
-{
-	background-image: url(../images/cshof.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 80%;
-	background-position: 40% 40%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#arcane
-{
-	background-image: url(../images/arcane.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 80%;
-	background-position: 40% 40%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#amusic
-{
-	background-image: url(../images/amusic.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 121%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#gibraltar
-{
-	background-image: url(../images/gibraltar.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 120%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}
-
-#lexcor
-{
-	background-image: url(../images/lexcor.png);
-	height: 120px;
-	overflow: hidden;
-	background-size: 80%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	border: 0.1px solid #e6e6e6;
-}*/
-
 #partnerInquiries
 {
 	h1
@@ -1113,23 +1012,190 @@ input
 	p
 	{
 		text-align: center;
-		font-size: 16px;
+		font-size: 18px;
+		line-height: 24px;
 	}
 
 }
 
 /*Partners Medium Size*/
 
+@media (min-width: 500px)
+{
+	#partnerInformation
+	{
+		h2
+		{
+			font-size: 60px;
+		}
+
+		p
+		{
+			font-size: 26px;
+			line-height: 30px;
+		}
+	}
+
+	#partnerInquiries
+{
+	
+	p
+	{
+		text-align: center;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+}
+
+}
+
+@media (min-width: 768px)
+{
+	#partnerInformation
+	{
+		height: 400px;
+
+		h2
+		{
+			font-size: 60px;
+			margin-top: 60px;
+		}
+
+		p
+		{
+			font-size: 26px;
+			line-height: 30px;
+		}
+	}
+
+	#partnerInquiries
+	{
+		h1
+		{
+			margin-top: 50px;
+		}
+		
+		p
+		{
+			text-align: center;
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 30px;
+		}
+
+	}
+
+}
+
+/*Education Page Mobile First*/
+
+#educationLandingPage
+{
+	background-image: url(../images/edu1.jpg);
+	height: 90%;
+	background-size: 150%;
+	background-color: rgba(51,51,51,0.90);
+	background-position: 50% 70%;
+	background-blend-mode: overlay;
+	width: 100%;
+}
+
+#curriculumCont
+{
+	background-image: url(../images/action3.jpg);
+	height: 90%;
+	background-size: 200%;
+	background-color: rgba(255,255,255,0.75);
+	background-position: 50% 30%;
+	background-blend-mode: overlay;
+
+	h1
+	{
+		color: $canada-grey;
+		margin-top: 30px;
+	}
+
+	p
+	{
+		color: $canada-grey;
+		margin-bottom: 30px;
+	}
+}
+
+#hockeyLeagueCont
+{
+	background-image: url(../images/action11.jpg);
+	height: 90%;
+	background-size: 250%;
+	background-color: rgba(51,51,51,0.99);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+
+	h1
+	{
+		margin-top: 30px;
+		text-align: right;
+	}
+
+	p
+	{
+		text-align: right;
+		margin-right: 10px;
+		margin-bottom: 30px;
+		margin-left: 15px;
+	}
+}
 
 
+#eduInquiries
+{
+	h1
+	{
+		text-align: center;
+		margin-top: 40px;
+	}
+	p
+	{
+		text-align: center;
+		font-size: 18px;
+		line-height: 24px;
+	}
 
+}
 
+@media (min-width: 500px)
+{
+	#educationLandingPage
+{
+	background-size: 100%;
+	background-position: 50% 40%;
 
+}
 
+}
 
+@media (min-width: 1024px)
+{
 
+	#curriculumCont
+	{
 
+		h1
+		{
+			font-size: 140%;
+			line-height: 54px;
+		}
 
+	}
 
+	#hockeyLeagueCont
+	{
 
-
+		h1
+		{
+			font-size: 140%;
+			line-height: 54px;
+		}
+	}
+}
