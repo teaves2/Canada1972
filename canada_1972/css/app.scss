@@ -1199,3 +1199,316 @@ input
 		}
 	}
 }
+
+/*MEDIA MOBILE SIZE*/
+#mediaLandingPage
+{
+	height: 90%;
+	background-image: url(../images/signature.jpg);
+	background-size: 100%;
+	background-size: 300%;
+	background-color: rgba(51,51,51,1);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+}
+
+#mediaTitle
+{
+	text-align: center;
+	margin-top: 20%;
+	margin-top: 200px;
+	font-size: 2em;
+}
+
+#mediaParagraph
+{
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 100px;
+}
+
+.readMore
+{
+	text-align: center;
+	color: $canada-white;
+	font-family: 'cast_ironcondensed';
+	font-size: .6em; 
+	letter-spacing: 3px;
+	margin-top: 170px;
+	margin-bottom: 0px;
+}
+
+.downArrow
+{
+	width: 50px;
+	max-width: 25px;
+}
+
+#mediaGallery
+{
+	background-image: url(../images/action9.jpg);
+	background-size: 200%;
+	background-color: rgba(255,255,255,.5);
+	background-position: 50% 50%;
+	background-repeat: none;
+	background-blend-mode: overlay;
+	max-height: 500px;
+}
+
+#mediaGalleryTitle
+{
+	text-align: center;
+	margin-top: 100px;
+	color: $canada-grey;
+	font-size: 4em;
+	margin-bottom: 40px;
+}
+
+#mediaGalleryButton
+{
+	background-color: $canada-red;
+	border-radius: 12px;
+	height: 50px;
+	font-family: 'Slabo 27px';
+	font-size: 24px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	-webkit-transition: opacity 0.3s ease-in-out;
+  	-moz-transition: opacity 0.3s ease-in-out;
+  	-ms-transition: opacity 0.3s ease-in-out;
+  	-o-transition: opacity 0.3s ease-in-out;
+  	transition: opacity 0.3s ease-in-out;
+}
+
+#mediaGalleryButton:hover
+{
+	opacity: 0.7;
+}
+
+#mediaBlog
+{
+	background-image: url(../images/action5.jpg);
+	background-size: 150%;
+	background-color: rgba(51,51,51,1);
+	background-position: 70% 40%;
+	background-repeat: none;
+	background-blend-mode: overlay;
+	max-height: 500px;
+}
+
+#mediaBlogTitle
+{
+	text-align: center;
+	margin-top: 100px;
+	color: $canada-white;
+	font-size: 4em;
+	margin-bottom: 40px;
+}
+
+#mediaBlogButton
+{
+	background-color: $canada-red;
+	border-radius: 12px;
+	height: 50px;
+	font-family: 'Slabo 27px';
+	font-size: 24px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	-webkit-transition: opacity 0.3s ease-in-out;
+  	-moz-transition: opacity 0.3s ease-in-out;
+  	-ms-transition: opacity 0.3s ease-in-out;
+  	-o-transition: opacity 0.3s ease-in-out;
+  	transition: opacity 0.3s ease-in-out;
+}
+
+#mediaBlogButton:hover
+{
+	opacity: 0.7;
+}
+
+#mediaPodcast
+{
+	background-image: url(../images/ice.jpg);
+	background-size: 300%;
+	background-color: rgba(255,255,255,.8);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+	max-height: 500px;
+}
+
+#mediaPodcastTitle
+{
+	text-align: center;
+	margin-top: 100px;
+	color: $canada-grey;
+	font-size: 4em;
+	margin-bottom: 20px;
+}
+
+#podcastComingSoon
+{
+	color: $canada-red;
+	text-align: center;
+}
+
+#footerCont
+{
+	background-color: $canada-grey;	
+	padding-bottom: 30px;
+}
+
+.copyRight
+{
+	text-align: center;
+	font-size: 12px;
+}
+
+#footerLogo
+{
+	max-width: 40px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+#homeConnect
+{
+	height: 200px;
+	background-image: url(../images/connect.jpg);
+	background-position: 50% 30%;
+ 	background-size: 120%;
+}
+
+#connectButton {
+  background-color: #eb1c3c;
+  border-radius: 16px;
+  height: 60px;
+  font-family: 'Slabo 27px';
+  font-size: 30px;
+  width: 250px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+ }
+
+#connectButton:hover {
+  opacity: 0.7; }
+
+/*Media Medium Size*/
+@media only screen and (min-width: 40.063em) {
+	#mediaTitle
+	{
+		font-size: 3em;
+	}
+
+	#mediaParagraph
+	{
+		font-size: .8em;
+		line-height: 1em;
+	}
+
+	.readMore
+	{
+		margin-top: 10px;
+	}
+
+}
+
+
+/*Blog Mobile*/
+#blogLandingPage
+{
+	height: 90%;
+	background-image: url(../images/partners.jpg);
+	background-size: 310%;
+	background-color: rgba(51,51,51,1);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+}
+
+#blogTitle
+{
+	text-align: center;
+	margin-top: 200px;
+	font-size: 2em;
+	margin-bottom: 230px;
+}
+
+#blogReadMore
+{
+	text-align: center;
+	color: $canada-white;
+	font-family: 'cast_ironcondensed';
+	font-size: .6em; 
+	letter-spacing: 3px;
+}
+
+.blogThumb
+{
+	height: 200px;
+	background-image: url(../images/ice.jpg);
+	background-size: 310%;
+	background-position: 50% 50%;
+	color: $canada-grey;
+	border-style: solid;
+	border-radius: 1px;
+	border-color: rgba(255, 255, 255, .7);
+	background-color: rgba(255,255,255,.7);
+	background-blend-mode: overlay;
+}
+
+.blogThumb:hover
+{
+	height: 200px;
+	background-image: url(../images/ice.jpg);
+	background-size: 310%;
+	background-color: rgba(235,28,60,1);
+	background-position: 50% 50%;
+	background-blend-mode: soft-light;
+	color: $canada-white;
+}
+
+.blogThumbTitle
+{
+	font-family: 'cast_ironcondensed';
+	font-size: .8em;
+	letter-spacing: 2px;
+	margin-left: 20px;
+}
+
+.postedOn
+{
+	font-size: .5em;
+	margin-left: 20px;
+}
+
+@media only screen and (min-width: 40.063em) {
+	#blogTitle
+	{
+		font-size: 3em;
+		margin-bottom: 190px;
+	}
+
+	.blogThumbTitle
+	{
+		font-size: 1em;
+	}
+
+	.postedOn
+	{
+		font-size: .6em;
+	}
+}
+
+
