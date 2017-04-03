@@ -7,6 +7,24 @@ $canada-white: #fff;
 
 /*GENERAL RULES*/
 
+.go-top 
+{
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+
+	img
+	{
+		height: 50px;
+	}
+
+}
+
 .hidden
 {
 	display: none;
@@ -35,6 +53,14 @@ h2
 	font-size: 36px;
  	color: $canada-white;
  	text-align: center;
+}
+
+h3
+{
+	font-family: 'cast_ironcondensed';
+ 	letter-spacing: 7px;
+	font-size: 36px;
+ 	color: $canada-red;
 }
 
 @media (max-width: 500px)
@@ -103,7 +129,7 @@ a:hover
 {
 	display: block;
 	float: left;
-	max-width: 50px;
+	max-width: 40px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -115,7 +141,7 @@ a:hover
 	float: right;
 	list-style-type: none;
 	background-color: none;
-	margin-top: 10px;
+	margin-top: 12px;
 
 		li
 		{
@@ -459,7 +485,6 @@ a:hover
 #footerCont
 {
 	background-color: $canada-grey;	
-	padding-bottom: 30px;
 }
 
 .copyRight
@@ -517,7 +542,7 @@ a:hover
 
 	#logo
 	{
-		max-width: 60px;
+		max-width: 50px;
 	}
 
 	#homeLandingPage
@@ -1200,315 +1225,1058 @@ input
 	}
 }
 
-/*MEDIA MOBILE SIZE*/
-#mediaLandingPage
+/*Legacy Page Mobile First*/
+#legacyLandingPage
 {
+	background-image: url(../images/action8.jpg);
 	height: 90%;
-	background-image: url(../images/signature.jpg);
-	background-size: 100%;
-	background-size: 300%;
-	background-color: rgba(51,51,51,1);
+	background-size: 280%;
+	background-color: rgba(51,51,51,0.90);
 	background-position: 50% 50%;
 	background-blend-mode: overlay;
 }
 
-#mediaTitle
+#chapterTitles
 {
-	text-align: center;
-	margin-top: 20%;
-	margin-top: 200px;
-	font-size: 2em;
-}
-
-#mediaParagraph
-{
-	text-align: center;
-	font-size: 18px;
-	line-height: 22px;
-	margin-bottom: 100px;
-}
-
-.readMore
-{
-	text-align: center;
-	color: $canada-white;
-	font-family: 'cast_ironcondensed';
-	font-size: .6em; 
-	letter-spacing: 3px;
-	margin-top: 170px;
-	margin-bottom: 0px;
-}
-
-.downArrow
-{
-	width: 50px;
-	max-width: 25px;
-}
-
-#mediaGallery
-{
-	background-image: url(../images/action9.jpg);
+	background-image: url(../images/action10.jpg);
 	background-size: 200%;
-	background-color: rgba(255,255,255,.5);
-	background-position: 50% 50%;
-	background-repeat: none;
-	background-blend-mode: overlay;
-	max-height: 500px;
+	background-position: 50% 30%;
+	
 }
 
-#mediaGalleryTitle
+.chapters
 {
-	text-align: center;
-	margin-top: 100px;
-	color: $canada-grey;
-	font-size: 4em;
-	margin-bottom: 40px;
+	height: 73px;
+	background-color: rgba(255,255,255,0.95);
+	border: 0.1px solid #e6e6e6;
+
+	
+	h1
+	{
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 73px;
+		color: $canada-grey;
+	}
+
+
 }
 
-#mediaGalleryButton
+.whiteP 
+{
+	font-size: 3vw;
+	line-height: 3.5vw;
+	text-align: justify;
+}
+
+.blackP 
+{
+	font-size: 3vw;
+	line-height: 3.5vw;
+	color: $canada-grey;
+	text-align: justify;
+}
+
+#before 
+{
+	padding: 20px;
+	padding-right: 40px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#line1
 {
 	background-color: $canada-red;
-	border-radius: 12px;
-	height: 50px;
-	font-family: 'Slabo 27px';
-	font-size: 24px;
-	width: 200px;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 75px;
-	-webkit-transition: opacity 0.3s ease-in-out;
-  	-moz-transition: opacity 0.3s ease-in-out;
-  	-ms-transition: opacity 0.3s ease-in-out;
-  	-o-transition: opacity 0.3s ease-in-out;
-  	transition: opacity 0.3s ease-in-out;
-}
-
-#mediaGalleryButton:hover
-{
-	opacity: 0.7;
-}
-
-#mediaBlog
-{
-	background-image: url(../images/action5.jpg);
-	background-size: 150%;
-	background-color: rgba(51,51,51,1);
-	background-position: 70% 40%;
-	background-repeat: none;
-	background-blend-mode: overlay;
-	max-height: 500px;
-}
-
-#mediaBlogTitle
-{
-	text-align: center;
-	margin-top: 100px;
-	color: $canada-white;
-	font-size: 4em;
-	margin-bottom: 40px;
-}
-
-#mediaBlogButton
-{
-	background-color: $canada-red;
-	border-radius: 12px;
-	height: 50px;
-	font-family: 'Slabo 27px';
-	font-size: 24px;
-	width: 200px;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 75px;
-	-webkit-transition: opacity 0.3s ease-in-out;
-  	-moz-transition: opacity 0.3s ease-in-out;
-  	-ms-transition: opacity 0.3s ease-in-out;
-  	-o-transition: opacity 0.3s ease-in-out;
-  	transition: opacity 0.3s ease-in-out;
-}
-
-#mediaBlogButton:hover
-{
-	opacity: 0.7;
-}
-
-#mediaPodcast
-{
-	background-image: url(../images/ice.jpg);
-	background-size: 300%;
-	background-color: rgba(255,255,255,.8);
-	background-position: 50% 50%;
-	background-blend-mode: overlay;
-	max-height: 500px;
-}
-
-#mediaPodcastTitle
-{
-	text-align: center;
-	margin-top: 100px;
-	color: $canada-grey;
-	font-size: 4em;
+	width: 100%;
+	height: 4px;
 	margin-bottom: 20px;
 }
 
-#podcastComingSoon
+#beforeTitle
 {
-	color: $canada-red;
-	text-align: center;
+	margin-bottom: 5px;
+	text-align: right;
 }
 
-#footerCont
+#beforeImg
 {
-	background-color: $canada-grey;	
-	padding-bottom: 30px;
+	background-image: url(../images/action4.jpg);
+	background-size: 550%;
+	background-position: 50% 50%;
+	position: relative;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.copyRight
-{
-	text-align: center;
-	font-size: 12px;
+#canada 
+{	
+	background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+	padding: 20px;
 }
 
-#footerLogo
+#canadaTitle
 {
-	max-width: 40px;
-	display: block;
-	margin: 0 auto;
-	margin-top: 20px;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
 }
 
-#homeConnect
+#line2
 {
-	height: 200px;
-	background-image: url(../images/connect.jpg);
-	background-position: 50% 30%;
- 	background-size: 120%;
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
 }
 
-#connectButton {
-  background-color: #eb1c3c;
-  border-radius: 16px;
-  height: 60px;
-  font-family: 'Slabo 27px';
-  font-size: 30px;
-  width: 250px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  display: block;
-  margin: 0 auto;
-  margin-top: 60px;
- }
-
-#connectButton:hover {
-  opacity: 0.7; }
-
-/*Media Medium Size*/
-@media only screen and (min-width: 40.063em) {
-	#mediaTitle
-	{
-		font-size: 3em;
-	}
-
-	#mediaParagraph
-	{
-		font-size: .8em;
-		line-height: 1em;
-	}
-
-	.readMore
-	{
-		margin-top: 10px;
-	}
-
+#game1Img
+{
+	background-image: url(../images/action13.jpg);
+	background-size: 100%;
+	background-position: 50% 40%;
+	height: 100px;
 }
 
-
-/*Blog Mobile*/
-#blogLandingPage
+#game1Title
 {
-	height: 90%;
-	background-image: url(../images/partners.jpg);
-	background-size: 310%;
-	background-color: rgba(51,51,51,1);
+	text-align: right;
+}
+
+#game1
+{
+	padding: 20px;
+}
+
+#line3
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#game2 
+{
+	padding: 20px;
+	padding-left: 30px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
 	background-position: 50% 50%;
 	background-blend-mode: overlay;
 }
 
-#blogTitle
+#line4
 {
-	text-align: center;
-	margin-top: 200px;
-	font-size: 2em;
-	margin-bottom: 230px;
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
 }
 
-#blogReadMore
+#game2Title
 {
-	text-align: center;
-	color: $canada-white;
-	font-family: 'cast_ironcondensed';
-	font-size: .6em; 
-	letter-spacing: 3px;
+	margin-bottom: 5px;
 }
 
-.blogThumb
+#game2Img
 {
-	height: 200px;
+	background-image: url(../images/action5.jpg);
+	background-size: 900%;
+	background-position: 52% 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#game2Content
+{
+	float: right;
+}
+
+#game3 
+{
+	padding: 20px;
+	padding-right: 40px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#line5
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#game3Title
+{
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+#game3Img
+{
+	background-image: url(../images/action6.jpg);
+	background-size: 390%;
+	background-position: 40% 30%;
+	position: relative;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#game4
+{	
 	background-image: url(../images/ice.jpg);
-	background-size: 310%;
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
 	background-position: 50% 50%;
-	color: $canada-grey;
-	border-style: solid;
-	border-radius: 1px;
-	border-color: rgba(255, 255, 255, .7);
-	background-color: rgba(255,255,255,.7);
+	background-blend-mode: overlay;
+	padding: 20px;
+}
+
+#game4Title
+{
+	margin-bottom: 5px;
+}
+
+#line6
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#stockholmImg
+{
+	background-image: url(../images/action4.jpg);
+	background-size: 100%;
+	background-position: 50% 55%;
+	height: 100px;
+}
+
+#stockholmTitle
+{
+	text-align: right;
+}
+
+#stockholm
+{
+	padding: 20px;
+}
+
+#line7
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#moscow
+{
+	padding: 20px;
+	padding-left: 30px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
+	background-position: 50% 50%;
 	background-blend-mode: overlay;
 }
 
-.blogThumb:hover
+#line8
 {
-	height: 200px;
-	background-image: url(../images/ice.jpg);
-	background-size: 310%;
-	background-color: rgba(235,28,60,1);
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#moscowTitle
+{
+	margin-bottom: 5px;
+}
+
+#moscowImg
+{
+	background-image: url(../images/action8.jpg);
+	background-size: 500%;
+	background-position: 30% 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#moscowContent
+{
+	float: right;
+}
+
+#game5 
+{
+	padding: 20px;
+	padding-right: 40px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#line9
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#game5Title
+{
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+#game5Img
+{
+	background-image: url(../images/action5.jpg);
+	background-size: 1300%;
+	background-position: 24% 10%;
+	position: relative;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#bigBad
+{
+	padding: 20px;
+	padding-left: 30px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
 	background-position: 50% 50%;
-	background-blend-mode: soft-light;
+	background-blend-mode: overlay;
+}
+
+#line10
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#bigBadTitle
+{
+	margin-bottom: 5px;
+}
+
+#bigBadImg
+{
+	background-image: url(../images/action6.jpg);
+	background-size: 500%;
+	background-position: 40% 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bigBadContent
+{
+	float: right;
+}
+
+#game6Title
+{
+	text-align: right;
+}
+
+#game6
+{
+	padding: 20px;
+}
+
+#line11
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#game7 
+{
+	padding: 20px;
+	padding-left: 30px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+}
+
+#line12
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#game7Title
+{
+	margin-bottom: 5px;
+}
+
+#game7Img
+{
+	background-image: url(../images/action10.jpg);
+	background-size: 900%;
+	background-position: 52% 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#game7Content
+{
+	float: right;
+}
+
+#game8Img
+{
+	background-image: url(../images/action11.jpg);
+	background-size: 100%;
+	background-position: 50% 40%;
+	height: 100px;
+}
+
+#game8Title
+{
+	text-align: right;
+}
+
+#game8
+{
+	padding: 20px;
+}
+
+#line13
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#after
+{
+	padding: 20px;
+	padding-left: 30px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+}
+
+#line14
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#afterTitle
+{
+	margin-bottom: 5px;
+}
+
+#afterImg
+{
+	background-image: url(../images/fans.jpg);
+	background-size: 500%;
+	background-position: 52% 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#afterContent
+{
+	float: right;
+}
+
+#twentyEight
+{
+	padding: 20px;
+	padding-right: 40px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#line15
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#twentyEightTitle
+{
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+#twentyEightImg
+{
+	background-image: url(../images/jersey.jpg);
+	background-size: 770%;
+	background-position: 50% 50%;
+	position: relative;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#more
+{
+	padding: 20px;
+	padding-left: 30px;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/ice.jpg);
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.40);
+	background-position: 50% 50%;
+	background-blend-mode: overlay;
+}
+
+#line16
+{
+	background-color: $canada-red;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 20px;
+}
+
+#moreTitle
+{
+	margin-bottom: 5px;
+}
+
+#moreImg
+{
+	background-image: url(../images/action12.jpg);
+	background-size: 500%;
+	background-position: 52% 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#moreContent
+{
+	float: right;
+}
+
+
+.toTop
+{
+	display: none;
+}
+
+
+@media (min-width: 500px)
+{
+	#legacyLandingPage
+	{
+		background-size: 200%;
+	}
+
+	.chapters
+{
+	height: 100px;
+
+	
+	h1
+	{
+		font-size: 22px;
+		line-height: 100px;
+	}
+
+}
+
+.chapters:hover
+{
+	background-color: rgba(235,26,59,0.8)
+
+}
+
+.chapters:hover h1
+{
 	color: $canada-white;
 }
 
-.blogThumbTitle
+
+.whiteP 
 {
-	font-family: 'cast_ironcondensed';
-	font-size: .8em;
-	letter-spacing: 2px;
-	margin-left: 20px;
+	font-size: 2.5vw;
+	line-height: 3vw;
 }
 
-.postedOn
+.blackP 
 {
-	font-size: .5em;
-	margin-left: 20px;
+	font-size: 2.5vw;
+	line-height: 3vw;
 }
 
-@media only screen and (min-width: 40.063em) {
-	#blogTitle
-	{
-		font-size: 3em;
-		margin-bottom: 190px;
-	}
-
-	.blogThumbTitle
-	{
-		font-size: 1em;
-	}
-
-	.postedOn
-	{
-		font-size: .6em;
-	}
 }
+
+@media (min-width: 768px)
+{
+	.chapters
+{
+
+	height: 150px;
+
+	
+	h1
+	{
+		font-size: 30px;
+		line-height: 150px;
+	}
+
+
+}
+
+.whiteP 
+{
+	font-size: 2vw;
+	line-height: 2.5vw;
+}
+
+.blackP 
+{
+	font-size: 2vw;
+	line-height: 2.5vw;
+}
+
+
+#beforeImg
+{
+	background-size: 300%;
+	
+}
+
+#game1Img
+{
+	height: 300px;
+}
+
+
+#game2Img
+{
+	background-size: 400%;
+}
+
+
+#game3Img
+{
+	background-size: 200%;
+}
+
+
+#stockholmImg
+{
+	height: 300px;
+}
+
+#stockholmTitle
+{
+	font-size: 50px;
+}
+
+#moscowImg
+{
+	background-size: 300%;
+	background-position: 30% 40%;
+}
+
+#game5Img
+{
+	background-size: 700%;
+}
+
+
+#bigBadImg
+{
+	background-size: 200%;
+}
+
+
+#game7Img
+{
+	background-size: 300%;
+	background-position: 52% 30%;
+}
+
+#game8Img
+{
+	height: 300px;
+}
+
+
+#afterImg
+{
+	background-size: 200%;
+}
+
+
+#twentyEightImg
+{
+	background-size: 300%;
+}
+
+
+#moreImg
+{
+	background-size: 300%;
+}
+
+}
+
+@media (min-width: 1023px)
+{
+	.chapters
+{
+
+	height: 170px;
+
+	
+	h1
+	{
+		font-size: 36px;
+		line-height: 170px;
+	}
+
+}
+
+.whiteP 
+{
+	font-size: 1.5vw;
+	line-height: 2vw;
+}
+
+.blackP 
+{
+	font-size: 1.5vw;
+	line-height: 2vw;
+}
+
+#before 
+{
+	padding: 40px;
+	padding-right: 80px;
+}
+
+
+#beforeTitle
+{
+	font-size: 50px;
+}
+
+#beforeImg
+{
+	background-size: 300%;
+	
+}
+
+#canada
+{
+	padding: 40px;
+}
+
+#canadaTitle
+{
+	font-size: 50px;
+}
+
+
+#game1Img
+{
+	height: 300px;
+}
+
+
+#game1
+{
+	padding: 40px;
+}
+
+#game1Title
+{
+	font-size: 50px;
+}
+
+#game2 
+{
+	padding: 40px;
+	padding-left: 50px;
+}
+
+
+#game2Title
+{
+	font-size: 50px;
+}
+
+#game2Img
+{
+	background-size: 400%;
+}
+
+
+#game3 
+{
+	padding: 40px;
+	padding-right: 80px;
+}
+
+
+#game3Title
+{
+	font-size: 50px;
+}
+
+#game3Img
+{
+	background-size: 200%;
+}
+
+#game4
+{	
+	padding: 40px;
+}
+
+#game4Title
+{
+	font-size: 50px;
+}
+
+#stockholmImg
+{
+	height: 300px;
+}
+
+#stockholmTitle
+{
+	font-size: 50px;
+}
+
+#stockholm
+{
+	padding: 40px;
+}
+
+#moscow
+{
+	padding: 40px;
+	padding-left: 60px;	
+}
+
+#moscowTitle
+{
+	font-size: 50px;
+}
+
+#moscowImg
+{
+	background-size: 300%;
+	background-position: 30% 40%;
+}
+
+
+#game5 
+{
+	padding: 40px;
+	padding-right: 80px;
+}
+
+#game5Title
+{
+	font-size: 50px;
+}
+
+#game5Img
+{
+	background-size: 400%;
+}
+
+#bigBad
+{
+	padding: 40px;
+	padding-left: 60px;
+}
+
+#bigBadTitle
+{
+	font-size: 50px;
+}
+
+#bigBadImg
+{
+	background-size: 200%;
+}
+
+#game6Title
+{
+	font-size: 50px;
+}
+
+#game6
+{
+	padding: 40px;
+}
+
+#game7 
+{
+	padding: 40px;
+	padding-left: 60px;
+}
+
+#game7Title
+{
+	font-size: 50px;
+}
+
+#game7Img
+{
+	background-size: 300%;
+	background-position: 52% 30%;
+}
+
+#game8Img
+{
+	height: 300px;
+}
+
+#game8Title
+{
+	font-size: 50px;
+}
+
+#game8
+{
+	padding: 40px;
+}
+
+#after
+{
+	padding: 40px;
+	padding-left: 60px;
+}
+
+#afterTitle
+{
+	font-size: 50px;
+}
+
+#afterImg
+{
+	background-size: 200%;
+}
+
+
+#twentyEight
+{
+	padding: 40px;
+	padding-right: 80px;
+}
+
+
+#twentyEightTitle
+{
+	font-size: 50px;
+}
+
+#twentyEightImg
+{
+	background-size: 300%;
+}
+
+#more
+{
+	padding: 40px;
+	padding-left: 60px;
+}
+
+#moreTitle
+{
+	font-size: 50px;
+}
+
+#moreImg
+{
+	background-size: 300%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
